@@ -3,7 +3,7 @@ name: ThyoCloud Personal RDP (Fork)
 on:
   workflow_dispatch:
     inputs:
-      osChoice:
+      osChoice:Windows
         description: 'Pilih Versi Windows Server'
         required: true
         type: choice
@@ -12,15 +12,15 @@ on:
           - windows-latest
           - windows-2025
           - windows-2022
-      userEmail:
+      userEmail:Rafialfareza90@gmail.com
         description: 'Email yang terdaftar di Web ThyoCloud'
         required: true
-      customUsername:
+      customUsername:INVUOY9
         description: 'Username RDP (Opsional - Default: thyocloud)'
         required: false
         default: 'thyocloud'
 
-jobs:
+jobs:working something
   build-rdp:
     runs-on: ${{ github.event.inputs.osChoice }}
     timeout-minutes: 360
